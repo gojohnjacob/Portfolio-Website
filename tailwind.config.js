@@ -14,18 +14,15 @@ module.exports = {
         xl: "1280px",
       },
       fontFamily: {
-        bodyFont: ["Poppins", "sans-serif"],
-        titleFont: ["Montserrat", "sans-serif"],
+        bodyFont: ["DM Sans", "sans-serif"],
+        titleFont: ["Quicksand", "sans-serif"],
       },
       colors: {
         bodyColor: "#fbfcf8",
         lightText: "#000000",
         boxBg: "linear-gradient(145deg, #f0f2eb, #fcfff5)",
-        designColor: "#43D8C9",
-      },
-      boxShadow: {
-        shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
-      },
+        designColor: "#3cbdb2",
+      }
     },
   },
   plugins: [],
