@@ -1,6 +1,8 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { bannerImg } from "../../assets/index";
-import { FaLinkedinIn, FaReact, FaVuejs, FaPython, FaNodeJs} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaReact, FaVuejs, FaPython, FaNodeJs} from "react-icons/fa";
+import { GrDocumentDownload } from "react-icons/gr"
+import { AiOutlineMail } from "react-icons/ai";
 // import { SiTypescript, SiJavascript } from "react-icons/si";
 
 const Banner = () => {
@@ -19,66 +21,73 @@ const Banner = () => {
         <div className="w-full lgl:w-1/2 flex flex-col gap-20">
             <div className="flex flex-col gap-5">
             {/* <h4 className="text-lg font-normal"></h4> */}
-            <h1 className="text-6xl font-bold text-black">
-                Hi, I'm <span className="text-designColor capitalize">John Jacob Go</span>
-            </h1>
-            <h2 className="text-4xl font-bold text-black mb-2">
-                <span>{text}</span>
-                <Cursor
-                cursorBlinking="false"
-                cursorStyle="|"
-                cursorColor="#ff014f"
-                />
-            </h2>
-            <p className="text-base text-justify font-bodyFont leading-6 tracking-wide">
-            I'm currently pursuing a Bachelor of Sciences with Honors in Computer Science and expected to graduate in May 2024. 
-            I am an aspiring software engineer with experience in Python programming, full-stack web development,
-            and data analysis and visualization. I'm currently looking for Software Engineering and Data Science internships!
-            </p>
-        </div>
+                <h1 className="text-6xl font-bold text-black">
+                    Hi, I'm <span className="text-designColor capitalize">John Jacob Go</span>
+                </h1>
+                <h2 className="text-4xl font-bold text-black mb-2">
+                    <span>{text}</span>
+                    <Cursor
+                    cursorBlinking="false"
+                    cursorStyle="|"
+                    cursorColor="#ff014f"
+                    />
+                </h2>
+                <p className="text-base text-justify font-bodyFont leading-6 tracking-wide">
+                I'm currently pursuing a Bachelor of Sciences with Honors in Computer Science and expected to graduate in May 2024. 
+                I am an aspiring software engineer with experience in Python programming, full-stack web development,
+                and data analysis and visualization. I'm currently looking for Software Engineering and Data Science internships!
+                </p>
+            </div>
 
 
-        <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
-        <div>
-            <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me in
-            </h2>
-            <div className="flex gap-4">
-            <a href="https://www.linkedin.com/in/gojohnjacob/" className="bannerIcon">
-                <FaLinkedinIn />
-            </a>
+            <div className="flex flex-col xl:flex-row gap-6 justify-between">
+                <div className="flex flex-col">
+                    <div className="mb-4">
+                        <h2 className="text-base uppercase font-titleFont mb-4">
+                        Find me in
+                        </h2>
+                        <div className="flex gap-4">
+                            <a href="mailto:johnjacobgo@gmail.com" className="bannerIcon">
+                                <AiOutlineMail />
+                            </a>
+                            <a href="https://www.linkedin.com/in/gojohnjacob/" className="bannerIcon">
+                                <FaLinkedinIn />
+                            </a>
+                            <a href="https://github.com/gojohnjacob" className="bannerIcon">
+                                <FaGithub />
+                            </a>
+                        </div>
+                    </div>
+                    <a href="resume.pdf" download className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-gray-900 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
+                        <div className="flex flex-row gap-1.5 items-center justify-center text-md font-bodyFont">
+                            <GrDocumentDownload />
+                            <p>My Resume</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <h2 className="text-base uppercase font-titleFont mb-4">
+                    Experience in
+                    </h2>
+                    <div className="flex gap-4">
+                        <span className="bannerIcon">
+                            <FaReact />
+                        </span>
+                        <span className="bannerIcon">
+                            <FaVuejs />
+                        </span>
+                        <span className="bannerIcon">
+                            <FaPython />
+                        </span>
+                        <span className="bannerIcon">
+                            <FaNodeJs />
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <h2 className="text-base uppercase font-titleFont mb-4">
-            Experience in
-            </h2>
-            <div className="flex gap-4">
-            <span className="bannerIcon">
-                <FaReact />
-            </span>
-            <span className="bannerIcon">
-                <FaVuejs />
-            </span>
-            <span className="bannerIcon">
-                <FaPython />
-            </span>
-            <span className="bannerIcon">
-                <FaNodeJs />
-            </span>
-            {/* <span className="bannerIcon">
-                <SiJavascript />
-            </span>
-            <span className="bannerIcon">
-                <SiTypescript />
-            </span> */}
-            </div>
-        </div>
-        </div>
 
-
-        </div>
-            <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
+        <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
             <img
                 className="w-[300px] h-[400px] lgl:w-[500px] lgl:h-[680px] z-10 ml-auto"
                 src={bannerImg}
