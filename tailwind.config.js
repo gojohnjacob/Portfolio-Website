@@ -19,8 +19,6 @@ module.exports = {
       },
       colors: {
         bodyColor: "#fbfcf8",
-        lightText: "#000000",
-        boxBg: "linear-gradient(145deg, #f0f2eb, #fcfff5)",
         designColor: "#3cbdb2",
       }
     },
