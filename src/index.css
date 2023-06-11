@@ -8,7 +8,10 @@
         @apply w-16 h-16 outline outline-1 bg-transparent bg-opacity-25 text-gray-900 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
     }
     .bgOpacity {
-        @apply bg-black bg-opacity-40;
+        @apply bg-designColor bg-opacity-40;
+    }
+    .resumeLi {
+        @apply w-full h-20 bg-transparent bg-opacity-25 text-xl text-black flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
     }
 }
 .active {
