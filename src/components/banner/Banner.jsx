@@ -18,29 +18,34 @@ const Banner = () => {
         id="home"
         className="w-full pt-10 pb-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-black"
     >
-        <div className="w-full lgl:w-1/2 flex flex-col gap-20">
+        <div className="w-full h-full lgl:w-1/2 flex flex-col gap-20">
             <div className="flex flex-col gap-5">
-            {/* <h4 className="text-lg font-normal"></h4> */}
-                <h1 className="text-6xl font-bold text-black">
-                    Hi, I'm <span className="text-designColor capitalize">John Jacob Go</span>
-                </h1>
-                <h2 className="text-4xl font-bold text-black mb-2">
-                    <span>{text}</span>
-                    <Cursor
-                    cursorBlinking="false"
-                    cursorStyle="|"
-                    cursorColor="#ff014f"
-                    />
-                </h2>
-                <p className="text-base text-justify font-bodyFont leading-6 tracking-wide">
-                I'm currently pursuing a Bachelor of Sciences with Honors in Computer Science and expected to graduate in May 2024. 
-                I am an aspiring software engineer with experience in Python programming, full-stack web development,
-                and data analysis and visualization. I'm currently looking for Software Engineering and Data Science internships!
-                </p>
+                    <h1 className="text-6xl font-bold text-black">
+                        Hi, I'm <span className="text-designColor capitalize">John Jacob Go</span>
+                    </h1>
+                    <h2 className="text-4xl font-bold text-black mb-2">
+                        <span>{text}</span>
+                        <Cursor
+                        cursorBlinking="false"
+                        cursorStyle="|"
+                        cursorColor="#ff014f"
+                        />
+                    </h2>
+                    <p className="text-base text-justify font-bodyFont leading-6 tracking-wide">
+                    I'm currently pursuing a Bachelor of Sciences with Honors in Computer Science and expected to graduate in May 2024. 
+                    I am an aspiring software engineer with experience in Python programming, full-stack web development,
+                    and data analysis and visualization. I'm currently looking for Software Engineering and Data Science internships!
+                    </p>
+                <a href="resume.pdf" download className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-gray-900 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
+                        <div className="flex flex-row gap-1.5 items-center justify-center text-md font-bodyFont">
+                            <GrDocumentDownload />
+                            <p>Download CV</p>
+                        </div>
+                    </a>
             </div>
 
 
-            <div className="flex flex-col xl:flex-row gap-6 justify-between">
+            <div className="flex flex-col xl:flex-row gap-6 justify-between bottom-0">
                 <div className="flex flex-col">
                     <div className="mb-4">
                         <h2 className="text-base uppercase font-titleFont mb-4">
@@ -58,12 +63,6 @@ const Banner = () => {
                             </a>
                         </div>
                     </div>
-                    <a href="resume.pdf" download className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-gray-900 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
-                        <div className="flex flex-row gap-1.5 items-center justify-center text-md font-bodyFont">
-                            <GrDocumentDownload />
-                            <p>My Resume</p>
-                        </div>
-                    </a>
                 </div>
                 <div>
                     <h2 className="text-base uppercase font-titleFont mb-4">
