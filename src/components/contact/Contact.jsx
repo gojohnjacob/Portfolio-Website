@@ -5,47 +5,9 @@ import { GrDocumentDownload, GrPhone } from "react-icons/gr"
 import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
-    const [username, setUsername] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
-    const [errMsg, setErrMsg] = useState("");
     const [successMsg, setSuccessMsg] = useState("");
-
-    const emailValidation = () => {
-    return String(email)
-        .toLocaleLowerCase()
-        .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
-    };
-
-    const handleSend = (e) => {
-    setSuccessMsg("");
-    setErrMsg("");
-    e.preventDefault();
-    if (username === "") {
-        setErrMsg("Username cannot be blank.");
-    } else if (phoneNumber === "") {
-        setErrMsg("Phone Number cannot be blank.");
-    } else if (email === "") {
-        setErrMsg("Email cannot be blank");
-    } else if (!emailValidation(email)) {
-        setErrMsg("Please give a valid email.");
-    } else if (subject === "") {
-        setErrMsg("Subject cannot be blank.");
-    } else if (message === "") {
-        setErrMsg("Message cannot be blank.");
-    } else {
-        setSuccessMsg(
-        `Your message has been sent successfully!`
-        );
-        setErrMsg("");
-        setUsername("");
-        setPhoneNumber("");
-        setEmail("");
-        setSubject("");
-        setMessage("");
-    }
+    const handleSend = () => {
+        setSuccessMsg("Your message has been sent successfully!");
     };
   return (
     <section
@@ -110,20 +72,17 @@ const Contact = () => {
       </div>
     </div>
           <div className="w-full lgl:w-[60%] h-full py-10 outline outline-1 bg-transparent flex flex-col gap-8 p-4 lgl:p-8 rounded-lg">
-            <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
+            <form action="https://formsubmit.co/johnjacobgo@gmail.com" onSubmit={handleSend} method="POST" className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
               <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-black uppercase tracking-wide">
                     Name
                   </p>
                   <input
-                    onChange={(e) => setUsername(e.target.value)}
-                    value={username}
-                    className={`${
-                      errMsg === "Username is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
+                    className="contactInput"
                     type="text"
+                    name="name"
+                    required
                   />
                 </div>
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
@@ -131,13 +90,10 @@ const Contact = () => {
                     Phone Number
                   </p>
                   <input
-                    onChange={(e) => setPhoneNumber(e.target.value)}
-                    value={phoneNumber}
-                    className={`${
-                      errMsg === "Phone number is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
+                    className="contactInput"
                     type="text"
+                    name="phoneNum"
+                    required
                   />
                 </div>
               </div>
@@ -146,13 +102,10 @@ const Contact = () => {
                   Email
                 </p>
                 <input
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                  className={`${
-                    errMsg === "Email cannot be blank." &&
-                    "outline-designColor"
-                  } contactInput`}
+                  className="contactInput"
                   type="email"
+                  name="email"
+                  required
                 />
               </div>
               <div className="flex flex-col gap-4">
@@ -160,13 +113,10 @@ const Contact = () => {
                   Subject
                 </p>
                 <input
-                  onChange={(e) => setSubject(e.target.value)}
-                  value={subject}
-                  className={`${
-                    errMsg === "Subject cannot be blank." &&
-                    "outline-designColor"
-                  } contactInput`}
+                  className="contactInput"
                   type="text"
+                  name="subject"
+                  required
                 />
               </div>
               <div className="flex flex-col gap-4">
@@ -174,28 +124,22 @@ const Contact = () => {
                   Message
                 </p>
                 <textarea
-                  onChange={(e) => setMessage(e.target.value)}
-                  value={message}
-                  className={`${
-                    errMsg === "Message cannot be blank." && "outline-designColor"
-                  } contactTextArea`}
+                  className="contactTextArea"
                   cols="30"
                   rows="8"
+                  name="message"
+                  required
                 ></textarea>
               </div>
               <div className="w-full">
                 <button
-                  onClick={handleSend}
+                type="submit"
+                //   onClick={handleSend}
                   className="w-full h-12 outline outline-1 bg-transparent rounded-lg text-base text-black tracking-wider uppercase hover:text-designColor duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
                   Send Message
                 </button>
               </div>
-              {errMsg && (
-                <p className="py-3 bg-transparent text-center text-orange-500 text-base tracking-wide">
-                  {errMsg}
-                </p>
-              )}
               {successMsg && (
                 <p className="py-3 bg-transparent text-center text-green-500 text-base tracking-wide">
                   {successMsg}
