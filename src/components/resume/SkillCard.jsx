@@ -24,7 +24,7 @@ const SkillCard = ({skillName, rating}) => {
                 <Typography className="text-sm uppercase font-medium">
                     {skillName}
                 </Typography>
-                <Rating className="text-designColor" value={rating} readonly />
+                <Rating className="text-designColor" value={Number(rating)} readonly />
             </div>
             <Typography className="text-sm uppercase font-medium">
                 {labels[rating].label}
