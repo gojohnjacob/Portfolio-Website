@@ -16,7 +16,7 @@ const Banner = () => {
     return (
     <section
         id="home"
-        className="w-full pt-10 pb-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-black"
+        className="w-full md:pt-10 pb-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-black"
     >
         <div className="w-full h-full lgl:w-1/2 flex flex-col gap-10 lg:gap-20">
             <div className="flex flex-col text-center lgl:text-left gap-5">

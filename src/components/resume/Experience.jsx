@@ -7,12 +7,12 @@ const Experience = () => {
     <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.5 } }}
-        className="py-12 font-titleFont grid grid-cols-2 gap-20"
+        className="py-12 font-titleFont grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20"
     >
         <div>
             <div className="flex flex-col gap-4 font-titleFont">
                 <p className="text-sm text-designColor tracking-[4px]">2022 - Present</p>
-                <h2 className="text-4xl font-bold">Job Experience</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
             </div>
             <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-designColor border-opacity-30 flex flex-col gap-10">
                 {experienceData.map((item) => (
@@ -23,7 +23,7 @@ const Experience = () => {
         <div>
             <div className="flex flex-col gap-4 font-titleFont">
                 <p className="text-sm text-designColor tracking-[4px]">2001 - 2020</p>
-                <h2 className="text-4xl font-bold">Research Experience</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">Research Experience</h2>
             </div>
             <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-designColor border-opacity-30 flex flex-col gap-10">
                 {researchData.map((item) => (

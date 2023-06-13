@@ -9,11 +9,11 @@ const Resume = () => {
     const [skillData, setSkillData] = useState(false);
     const [experienceData, setExperienceData] = useState(false);
     return (
-        <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
+        <section id="resume" className="w-full py-10 lg:py-20 border-b-[1px] border-b-black">
             <div className="flex justify-center items-center text-center">
                 <Title title="What I've done so far" desc="My Resume" />
             </div>
-            <div>
+            <div className="hidden lg:block">
                 <ul className="w-full grid grid-cols-1 lg:grid-cols-3">
                     <li
                     onClick={() =>
@@ -53,9 +53,16 @@ const Resume = () => {
                     </li>
                 </ul>
             </div>
-            {educationData && <Education />}
-            {skillData && <Skills />}
-            {experienceData && <Experience />}
+            <div className="hidden lg:block">
+                {educationData && <Education />}
+                {skillData && <Skills />}
+                {experienceData && <Experience />}
+            </div>
+            <div className="lg:hidden">
+                <Education />
+                <Skills />
+                <Experience />
+            </div>
         </section>
     );
 }

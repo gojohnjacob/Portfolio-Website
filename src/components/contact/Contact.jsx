@@ -18,7 +18,7 @@ const Contact = () => {
         <Title title="Feel free to reach out for a chat!" desc="Contact Me" />
         </div>
         <div className="w-full">
-        <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
+        <div className="w-full h-auto flex flex-col gap-5 lgl:gap-0 lgl:flex-row justify-between">
         <div className="w-full outline outline-1 lgl:w-[35%] lgl:self-stretch bg-transparent p-4 lgl:p-8 rounded-lg flex flex-col gap-8 justify-center">
         <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-black">John Jacob Go</h3>
@@ -31,37 +31,37 @@ const Contact = () => {
         <a href="mailto:johnjacobgo@gmail.com" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <AiOutlineMail />
-                    <p className="text-base">johnjacobgo@gmail.com</p>
+                    <p className="text-sm md:text-base">johnjacobgo@gmail.com</p>
                 </div>
         </a>
         <div className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <GrPhone />
-                    <p className="text-base">+65 80230250 | +63 9173850239</p>
+                    <p className="text-sm md:text-base">+65 80230250 | +63 9173850239</p>
                 </div>
         </div>
         <a href="https://t.me/gojohnjacob" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <FaTelegram />
-                    <p className="text-base">@gojohnjacob</p>
+                    <p className="text-sm md:text-base">@gojohnjacob</p>
                 </div>
         </a>
         <a href="https://www.linkedin.com/in/gojohnjacob" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <FaLinkedinIn />
-                    <p className="text-base">https://www.linkedin.com/in/gojohnjacob</p>
+                    <p className="text-sm md:text-base">https://www.linkedin.com/in/gojohnjacob</p>
                 </div>
         </a>
         <a href="https://github.com/gojohnjacob" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <FaGithub />
-                    <p className="text-base">https://github.com/gojohnjacob</p>
+                    <p className="text-sm md:text-base">https://github.com/gojohnjacob</p>
                 </div>
         </a>
         <a href="resume.pdf" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <GrDocumentDownload />
-                    <p className="text-base">Resume</p>
+                    <p className="text-sm md:text-base">Resume</p>
                 </div>
         </a>
         </div>
@@ -103,7 +103,7 @@ const Contact = () => {
                     required
                 />
                 </div>
-                <div className="flex flex-col gap-4">
+                {/* <div className="flex flex-col gap-4">
                 <p className="text-sm text-black uppercase tracking-wide">
                     Subject
                 </p>
@@ -113,7 +113,7 @@ const Contact = () => {
                     name="subject"
                     required
                 />
-                </div>
+                </div> */}
                 <div className="flex flex-col gap-4">
                 <p className="text-sm text-black uppercase tracking-wide">
                     Message
