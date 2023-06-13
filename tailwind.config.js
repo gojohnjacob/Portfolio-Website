@@ -20,7 +20,17 @@ module.exports = {
       colors: {
         bodyColor: "#fbfcf8",
         designColor: "#3cbdb2",
-      }
+      },
+      keyframes: {
+            rotateAnimation: {
+              'from': {
+                transform: 'rotate(0deg)',
+              },
+              'to': {
+                transform: 'rotate(90deg)',
+              },
+            }
+      },
     },
   },
   plugins: [],

@@ -11,7 +11,7 @@ const Education = () => {
         >
             <div>
                 <div className="flex flex-col gap-4 font-titleFont">
-                    <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
+                    <p className="text-sm text-designColor tracking-[4px]">2007 - Present</p>
                     <h2 className="text-4xl font-bold">Education</h2>
                 </div>
                 <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-designColor border-opacity-30 flex flex-col gap-10">
@@ -23,7 +23,7 @@ const Education = () => {
 
             <div>
                 <div className="flex flex-col gap-4 font-titleFont">
-                    <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
+                    <p className="text-sm text-designColor tracking-[4px]">2020 - Present</p>
                     <h2 className="text-4xl font-bold">Extracurriculars</h2>
                 </div>
                 <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-designColor border-opacity-30 flex flex-col gap-10">
