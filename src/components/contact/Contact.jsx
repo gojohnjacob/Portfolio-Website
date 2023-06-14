@@ -40,19 +40,19 @@ const Contact = () => {
                     <p className="text-sm md:text-base">+65 80230250 | +63 9173850239</p>
                 </div>
         </div>
-        <a href="https://t.me/gojohnjacob" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
+        <a href="https://t.me/gojohnjacob" target="_blank" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <FaTelegram />
                     <p className="text-sm md:text-base">@gojohnjacob</p>
                 </div>
         </a>
-        <a href="https://www.linkedin.com/in/gojohnjacob" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
+        <a href="https://www.linkedin.com/in/gojohnjacob" target="_blank" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <FaLinkedinIn />
                     <p className="text-sm md:text-base">https://www.linkedin.com/in/gojohnjacob</p>
                 </div>
         </a>
-        <a href="https://github.com/gojohnjacob" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
+        <a href="https://github.com/gojohnjacob" target="_blank" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <FaGithub />
                     <p className="text-sm md:text-base">https://github.com/gojohnjacob</p>

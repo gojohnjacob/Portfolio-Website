@@ -66,10 +66,10 @@ const Banner = () => {
                             <a href="mailto:johnjacobgo@gmail.com" className="bannerIcon">
                                 <AiOutlineMail />
                             </a>
-                            <a href="https://www.linkedin.com/in/gojohnjacob/" className="bannerIcon">
+                            <a href="https://www.linkedin.com/in/gojohnjacob/" target="_blank" className="bannerIcon">
                                 <FaLinkedinIn />
                             </a>
-                            <a href="https://github.com/gojohnjacob" className="bannerIcon">
+                            <a href="https://github.com/gojohnjacob" target="_blank" className="bannerIcon">
                                 <FaGithub />
                             </a>
                         </div>
