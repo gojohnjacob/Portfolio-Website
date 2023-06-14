@@ -3,6 +3,7 @@ import { navLinksData } from '../../constants';
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
+import { Transition } from '@headlessui/react';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -34,12 +35,12 @@ const Navbar = () => {
         </div>
         <span
             onClick={() => setShowMenu(!showMenu)}
-            className={`sticky text-xl mdl:hidden bg-designColor outline outline-1 w-10 h-10 mr-1 inline-flex items-center justify-center rounded-full text-bodyColor cursor-pointer ${showMenu ? "animate-rotateAnimation" : ""}`}
+            className={`absolute right-1 top-5 text-xl mdl:hidden bg-designColor outline outline-1 w-10 h-10 mr-1 inline-flex items-center justify-center rounded-full text-bodyColor cursor-pointer ${showMenu ? "animate-rotateAnimation" : ""}`}
         >
             <FiMenu />
         </span>
-    {showMenu && (
-    <div className="w-full h-auto overflow-scroll absolute top-0 left-0 bg-bodyColor mx-[0] border-b-[1px] border-b-black p-4 scrollbar-hide">
+    {/* {showMenu && (
+    <div className="w-full h-auto transition duration-300 ease-in-out overflow-scroll absolute top-0 left-0 bg-bodyColor mx-[0] border-b-[1px] border-b-black p-4 scrollbar-hide">
         <div className="flex flex-col gap-8 py-2 relative">
         <ul className="flex flex-col items-center pt-10 gap-4">
             {navLinksData.map((item) => (
@@ -63,13 +64,58 @@ const Navbar = () => {
         </ul>
         <span
             onClick={() => setShowMenu(false)}
-            className="absolute top-4 right-4 text-black hover:text-designColor duration-300 text-2xl cursor-pointer"
-        >
+            className="absolute top-3 right-0 text-black hover:text-designColor duration-300 text-2xl cursor-pointer">
             <MdClose />
         </span>
         </div>
     </div>
-    )}
+    )} */}
+    <div>
+      <Transition
+        show={showMenu}
+        enter="transition-opacity duration-300"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-300"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        {(ref) => (
+          <div
+            ref={ref}
+            className="w-full h-auto overflow-scroll absolute top-0 left-0 bg-bodyColor mx-0 border-b-[1px] border-black p-4 scrollbar-hide"
+          >
+            <div className="flex flex-col gap-8 py-2 relative">
+              <ul className="flex flex-col items-center pt-10 gap-4">
+                {navLinksData.map((item) => (
+                  <li
+                    key={item._id}
+                    className="text-base font-normal text-black tracking-wide cursor-pointer hover:text-designColor duration-300"
+                  >
+                    <Link
+                      onClick={() => setShowMenu(false)}
+                      activeClass="active"
+                      to={item.link}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <span
+            onClick={() => setShowMenu(false)}
+            className="absolute top-3 right-0 text-black hover:text-designColor duration-300 text-2xl cursor-pointer">
+            <MdClose />
+        </span>
+            </div>
+          </div>
+        )}
+      </Transition>
+    </div>
     </div>
   );
 }
