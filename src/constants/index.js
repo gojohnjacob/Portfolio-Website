@@ -9,11 +9,11 @@ export const navLinksData = [
         title: "About Me",
         link: "about",
     },
-    {
-        _id: 1003,
-        title: "Featured Projects",
-        link: "featured-projects",
-    },
+    // {
+    //     _id: 1003,
+    //     title: "Featured Projects",
+    //     link: "featured-projects",
+    // },
     {
         _id: 1004,
         title: "Resume",
