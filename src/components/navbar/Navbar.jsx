@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
     </div>
     )} */}
-    <div>
+    <div className="mdl:hidden">
       <Transition
         show={showMenu}
         enter="transition-opacity duration-300"

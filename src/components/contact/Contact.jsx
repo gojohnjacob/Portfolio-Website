@@ -19,7 +19,7 @@ const Contact = () => {
         </div>
         <div className="w-full">
         <div className="w-full h-auto flex flex-col gap-5 lgl:gap-0 lgl:flex-row justify-between">
-        <div className="w-full outline outline-1 lgl:w-[35%] lgl:self-stretch bg-transparent p-4 lgl:p-8 rounded-lg flex flex-col gap-8 justify-center">
+        <div className="w-full outline outline-1 lgl:w-[35%] bg-transparent p-4 lgl:p-8 rounded-lg flex flex-col gap-8 justify-center">
         <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-black">John Jacob Go</h3>
         <p className="text-lg font-normal text-black">
@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <GrPhone />
-                    <p className="text-sm md:text-base">+65 80230250 | +63 9173850239</p>
+                    <span className="text-sm md:text-base break-words">+6580230250</span>
                 </div>
         </div>
         <a href="https://t.me/gojohnjacob" target="_blank" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
@@ -46,7 +46,7 @@ const Contact = () => {
                     <p className="text-sm md:text-base">@gojohnjacob</p>
                 </div>
         </a>
-        <a href="https://www.linkedin.com/in/gojohnjacob" target="_blank" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
+        <a href="https://www.linkedin.com/in/gojohnjacob" target="_blank" className="overflow-auto h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <FaLinkedinIn />
                     <p className="text-sm md:text-base">https://www.linkedin.com/in/gojohnjacob</p>
@@ -66,7 +66,7 @@ const Contact = () => {
         </a>
         </div>
     </div>
-            <div className="w-full lgl:w-[60%] h-full py-10 outline outline-1 bg-transparent flex flex-col gap-8 p-4 lgl:p-8 rounded-lg">
+            <div className="w-full lgl:w-[60%] py-10 outline outline-1 lgl:self-stretch bg-transparent flex flex-col gap-8 p-4 lgl:p-8 rounded-lg">
             <form action="https://formsubmit.co/johnjacobgo@gmail.com" onSubmit={handleSend} method="POST" className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
                 <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
