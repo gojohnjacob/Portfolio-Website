@@ -2,18 +2,18 @@ import Title from '../layouts/Title';
 import Education from './Education';
 import Skills from './Skills';
 import Experience from "./Experience"
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const Resume = () => {
-    const [educationData, setEducationData] = useState(true);
-    const [skillData, setSkillData] = useState(false);
-    const [experienceData, setExperienceData] = useState(false);
+    // const [educationData, setEducationData] = useState(true);
+    // const [skillData, setSkillData] = useState(false);
+    // const [experienceData, setExperienceData] = useState(false);
     return (
         <section id="resume" className="w-full py-10 lg:py-20 border-b-[1px] border-b-black">
             <div className="flex justify-center items-center text-center">
                 <Title title="What I've done so far" desc="My Resume" />
             </div>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
                 <ul className="w-full grid grid-cols-1 lg:grid-cols-3">
                     <li
                     onClick={() =>
@@ -52,16 +52,16 @@ const Resume = () => {
                         Work Experience
                     </li>
                 </ul>
-            </div>
-            <div className="hidden lg:block">
+            </div> */}
+            {/* <div className="hidden lg:block">
                 {educationData && <Education />}
                 {skillData && <Skills />}
                 {experienceData && <Experience />}
-            </div>
-            <div className="lg:hidden">
+            </div> */}
+            <div className="">
                 <Education />
-                <Skills />
                 <Experience />
+                <Skills />
             </div>
         </section>
     );

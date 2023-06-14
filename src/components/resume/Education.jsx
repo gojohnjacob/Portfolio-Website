@@ -7,7 +7,7 @@ const Education = () => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.5 } }}
-            className="lg:py-12 font-titleFont gap-10 lg:gap-20 grid grid-cols-1 lg:grid-cols-2"
+            className="font-titleFont gap-10 lg:gap-20 grid grid-cols-1 lg:grid-cols-2"
         >
             <div>
                 <div className="flex flex-col gap-4 font-titleFont">
