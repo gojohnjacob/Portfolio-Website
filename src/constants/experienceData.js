@@ -5,7 +5,9 @@ export const experienceData = [
         title: "Test",
         subTitle: "test",
         result: "",
-        desc: "test"
+        desc: "test",
+        hasModal: false,
+        longDesc: "",
     },
     {
         id: 2,
@@ -14,6 +16,8 @@ export const experienceData = [
         subTitle: "test",
         result: "test",
         desc: "test",
+        hasModal: false,
+        longDesc: "",
     },
     {
         id: 3,
@@ -22,6 +26,8 @@ export const experienceData = [
         subTitle: "test",
         result: "test",
         desc: "test",
+        hasModal: false,
+        longDesc: "",
     }
 ];
 
@@ -32,7 +38,9 @@ export const researchData = [
         title: "Test",
         subTitle: "test",
         result: "",
-        desc: "test"
+        desc: "test",
+        hasModal: false,
+        longDesc: "",
     },
     {
         id: 2,
@@ -41,6 +49,8 @@ export const researchData = [
         subTitle: "test",
         result: "test",
         desc: "test",
+        hasModal: false,
+        longDesc: "",
     },
     {
         id: 3,
@@ -49,5 +59,7 @@ export const researchData = [
         subTitle: "test",
         result: "test",
         desc: "test",
+        hasModal: false,
+        longDesc: "",
     }
 ];

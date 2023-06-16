@@ -5,7 +5,9 @@ export const schoolData = [
         title: "BSc (Hons) in Computer Science",
         subTitle: "Yale-NUS College (2020-2024)",
         result: "4.75/5.0",
-        desc: "First Class Honors"
+        desc: "First Class Honors",
+        hasModal: true,
+        longDesc: "",
     },
     {
         id: 2,
@@ -14,6 +16,8 @@ export const schoolData = [
         subTitle: "Yale University (Fall 2022)",
         result: "",
         desc: "Courses taken: Full Stack Web Development, Database Systems, Management of Software Development",
+        hasModal: false,
+        longDesc: "",
     },
     {
         id: 3,
@@ -22,6 +26,8 @@ export const schoolData = [
         subTitle: "Xavier School San Juan (2007-2020)",
         result: "99.43/100",
         desc: "Ranked 2nd in graduating class of 300+. SAT: 1560/1600",
+        hasModal: true,
+        longDesc: "",
     }
 ];
 export const ecaData = [
@@ -31,7 +37,9 @@ export const ecaData = [
         title: "Peer Tutor",
         subTitle: "Yale-NUS College (Aug 2021 - Present)",
         result: "",
-        desc: "Courses taught: Software Engineering, Introduction to Python, Introduction to Data Science, Quantitative Reasoning, Scientific Inquiry"
+        desc: "Courses taught: Software Engineering, Introduction to Python, Introduction to Data Science, Quantitative Reasoning, Scientific Inquiry",
+        hasModal: true,
+        longDesc: "",
     },
     {
         id: 2,
@@ -40,6 +48,8 @@ export const ecaData = [
         subTitle: "Yale-NUS College (Aug 2020 - May 2022)",
         result: "",
         desc: "Spearheaded an educational curriculum for 20 club members that teaches data analysis and visualization using base Python, NumPy, and pandas and its applications in research and academia.",
+        hasModal: true,
+        longDesc: "",
     },
     {
         id: 3,
@@ -48,5 +58,7 @@ export const ecaData = [
         subTitle: "Yale-NUS College (May 2023 - Present)",
         result: "",
         desc: "",
+        hasModal: false,
+        longDesc: "",
     }
 ];

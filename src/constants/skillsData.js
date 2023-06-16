@@ -12,7 +12,7 @@ export const skillsLeftData = [
     {
         id: 3,
         name: "Express.JS",
-        rating: 4,
+        rating: 5,
     },
     {
         id: 4,
@@ -85,7 +85,7 @@ export const skillsRightData = [
     {
         id: 2,
         name: "MongoDB",
-        rating: 4,
+        rating: 5,
     },
     {
         id: 3,
@@ -110,7 +110,7 @@ export const skillsRightData = [
     {
         id: 7,
         name: "GraphQL",
-        rating: 2,
+        rating: 3,
     },
     {
         id: 8,
@@ -121,7 +121,7 @@ export const skillsRightData = [
     {
         id: 9,
         name: "Kubernetes",
-        rating: 2,
+        rating: 1,
     },
     {
         id: 10,
@@ -135,7 +135,7 @@ export const skillsRightData = [
     },
     {
         id: 12,
-        name: "Pocketbase",
+        name: "Supabase",
         rating: 4,
     },
     {
