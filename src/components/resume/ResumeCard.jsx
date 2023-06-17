@@ -10,7 +10,7 @@ const ResumeCard = ({item:{title,subTitle,result,desc,hasModal, longDesc}}) => {
                 </span>
             </div>
             <div onClick={() => setShowModal(true)} className={`w-full outline outline-1 ${hasModal ? "cursor-pointer" : ""} font-bodyFont bg-transparent hover:-translate-y-1 transition-all duration-300 rounded-lg p-4 lgl:px-10 flex flex-col justify-center gap-6 lgl:gap-10`}>
-                <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:gap-0 lgl:items-center">
+                <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:items-center">
                     <div>
                         <h3 className="text-xl md:text-2xl font-semibold">
                         {title}
@@ -42,7 +42,7 @@ const ResumeCard = ({item:{title,subTitle,result,desc,hasModal, longDesc}}) => {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-bodyColor outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t gap-4">
-                  <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:gap-0 lgl:items-center">
+                  <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:items-center">
                     <div>
                         <h3 className="text-xl md:text-2xl font-semibold">
                         {title}
