@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         bodyFont: ["DM Sans", "sans-serif"],
         titleFont: ["Quicksand", "sans-serif"],
+        logoFont: ["Shippori Mincho", "serif"]
       },
       colors: {
         bodyColor: "#fbfcf8",

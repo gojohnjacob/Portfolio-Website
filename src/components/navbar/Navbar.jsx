@@ -9,7 +9,7 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
   return (
     <div className="w-full h-20 lg:h-24 sticky top-0 z-50 bg-transparent md:bg-bodyColor mx-0 lg:mx-auto flex justify-between items-center font-titleFont md:border-b-[1px] md:border-b-black">
-        <div className="hidden md:block text-lg lg:text-xl">
+        <div className="hidden md:block text-xl lg:text-2xl font-logoFont">
         John Jacob Go
         </div>
         <div className="mr-1">
