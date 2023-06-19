@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ResumeCard = ({item:{title,subTitle,result,desc,hasModal, longDesc}}) => {
+const ResumeCard = ({item:{title, subTitle, result, desc, hasModal, longDesc, coursesTaken}}) => {
     const [showModal, setShowModal] = useState(false);
     return (
         <div className="w-full h-1/3 group flex">
@@ -35,12 +35,10 @@ const ResumeCard = ({item:{title,subTitle,result,desc,hasModal, longDesc}}) => {
             {(showModal && hasModal)? (
         <>
           <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+            className="justify-center items-center font-bodyFont flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
-            <div className="relative w-auto my-6 mx-5 max-w-3xl">
-              {/*content*/}
+            <div className="relative h-auto w-2/3 my-6 mx-5 max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-bodyColor outline-none focus:outline-none">
-                {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t gap-4">
                   <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:items-center">
                     <div>
@@ -68,10 +66,19 @@ const ResumeCard = ({item:{title,subTitle,result,desc,hasModal, longDesc}}) => {
                     </span>
                   </button>
                 </div>
-                <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-slate-500 text-md md:text-lg font-normal text-black leading-relaxed">
-                   {longDesc}
-                  </p>
+                <div className="relative px-8 py-4 ml-1 flex-auto">
+                  <ul className="list-none mb-4 text-md md:text-lg font-normal text-black">
+                    {longDesc.map(item => (
+                            <li className="mb-3">{item}</li>
+                        ))}
+                  </ul>
+                  {coursesTaken &&
+                  <ul className="text-md md:text-lg list-disc"> <p className="underline">Courses taken:</p>
+                    {coursesTaken.map(item => (
+                        <li>{item}</li>
+                    ))}
+                  </ul>
+                    }
                 </div>
               </div>
             </div>
