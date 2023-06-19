@@ -12,7 +12,7 @@ export const portfolioData = [
     {
         id: 2,
         webLink: "",
-        githubLink: "https://github.com/gojohnjacob/Portfolio-Website",
+        githubLink: "https://github.com/gojohnjacob/Ripple-SocialMedia",
         img: "",
         title: "Ripple: Social Media Website",
         desc: "Tech Stack: React, Next.JS, Tailwind CSS, Supabase, SQL",
@@ -20,7 +20,7 @@ export const portfolioData = [
     {
         id: 3,
         webLink: "",
-        githubLink: "https://github.com/gojohnjacob/Portfolio-Website",
+        githubLink: "https://github.com/gojohnjacob/CPSC419-project",
         img: "",
         title: "Yale University CPSC490 Thesis Website",
         desc: "Tech Stack: Flask, Python, SQLite, Bootstrap, JavaScript",
