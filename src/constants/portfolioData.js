@@ -1,4 +1,4 @@
-import { personal, srp, } from "../assets/index"
+import { personal, srp, yale} from "../assets/index"
 
 export const portfolioData = [
     {
@@ -21,7 +21,7 @@ export const portfolioData = [
         id: 3,
         webLink: "",
         githubLink: "https://github.com/gojohnjacob/CPSC419-project",
-        img: "",
+        img: yale,
         title: "Yale University CPSC490 Thesis Website",
         desc: "Tech Stack: Flask, Python, SQLite, Bootstrap, JavaScript",
     },
