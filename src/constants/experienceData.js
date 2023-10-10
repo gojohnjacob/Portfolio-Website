@@ -1,7 +1,34 @@
 export const experienceData = [
     {
+        id: 4,
+        title: "Software Engineer Intern (Aug 2023 - Present)",
+        subTitle: "PsyFi",
+        result: "",
+        desc: "Created this web application from scratch to serve 5000+ users using Next.js, TypeScript, TailwindCSS, Recoil",
+        hasModal: true,
+        longDesc: [
+            "Led cross-functional team of 4 in the design and end-to-end development of crypto investment platform",
+            "Created this web application from scratch to serve 5000+ users using Next.js, TypeScript, TailwindCSS, Recoil",
+            "Added backend functionality and REST API endpoints using Firebase and Cloud Functions",
+            "Migrated time series data from MySQL to InfluxDB resulting in a 30% improvement in query performance and enhanced scalability"
+        ],
+    },
+    {
+        id: 5,
+        title: "Full Stack Developer Intern (Jul 2023 - Present)",
+        subTitle: "Vibefam",
+        result: "",
+        desc: "Developed new backend functionality involving user management and client onboarding using TypeScript, Firebase",
+        hasModal: true,
+        longDesc: [
+            "Developed new backend functionality involving user management and client onboarding using TypeScript, Firebase",
+            "Migrated legacy codebase from JavaScript to TypeScript, cutting debugging time for developers by 2+ hours daily",
+            "Expanded test coverage by 30% by adding unit tests for TypeScript codebase using Jest",
+            "Built user interfaces and implemented design mockups using Vue.JS"
+        ],
+    },
+    {
         id: 1,
-        // src: ,
         title: "Software Development Intern (May 2023 - Aug 2023)",
         subTitle: "VFlowTech Inc.",
         result: "",
@@ -10,20 +37,20 @@ export const experienceData = [
         longDesc: [
             "Implemented and released admin dashboard from scratch to allow fast and easy monitoring of IOT devices by the team using Vue.JS, Bootstrap and Material UI, reducing latency by 70%",
             "Created RESTful APIs using Django and PostgreSQL to retrieve IOT sensor data",
-            "Developed DevOps pipeline for Vue.JS and Python applications using Docker and Jenkins",
-            "Added server-sent events to existing API using Elixir, allowing for real-time monitoring of IOT devices"
+            "Developed DevOps pipeline for Vue.JS and Python projects using Docker and Jenkins",
+            "Created wireframes and website flowcharts using Figma for new company project"
         ],
     },
     {
         id: 2,
-        title: "Full Stack Development Student Associate (May 2023 - Present)",
+        title: "Backend Development Student Associate (Apr 2023 - Present)",
         subTitle: "Yale-NUS College",
         result: "",
-        desc: "Revamped admin dashboard UI that handles hundreds of new data entries daily using React.JS, Bootstrap, Material UI",
+        desc: "Implemented backend features for astrology research dashboard using Flask such as data processing and validation, advanced search functionality, and admin database management",
         hasModal: true,
         longDesc: [
-            "Revamped admin dashboard UI that handles hundreds of new data entries daily using React.JS, Bootstrap, Material UI",
-            "Implemented features using Flask and to process data from submissions of different file types, data validation, error handling, and retroactively resolve minor errors"
+            "Implemented backend features for astrology research dashboard using Flask such as data processing and validation, advanced search functionality, and admin database management",
+            "Optimized database queries and introduced pagination, caching, and lazy loading of entries, leading to a 40% improvement in page load time"
         ],
     },
     {

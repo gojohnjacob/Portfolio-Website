@@ -9,10 +9,10 @@ const ResumeCard = ({item:{title, subTitle, result, desc, hasModal, longDesc, co
                 <span className="w-4 h-4 rounded-full bg-bodyColor inline-flex group-hover:bg-designColor duration-300"></span>
                 </span>
             </div>
-            <div onClick={() => setShowModal(true)} className={`w-full outline outline-1 ${hasModal ? "cursor-pointer" : ""} font-bodyFont bg-transparent hover:-translate-y-1 transition-all duration-300 rounded-lg p-4 lgl:px-10 flex flex-col justify-center gap-6 lgl:gap-10`}>
+            <div onClick={() => setShowModal(true)} className={`w-full outline outline-1 ${hasModal ? "cursor-pointer" : ""} font-bodyFont bg-transparent hover:-translate-y-1 transition-all duration-300 rounded-lg p-4 lgl:px-10 flex flex-col justify-center gap-3 lgl:gap-6`}>
                 <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:items-center">
                     <div>
-                        <h3 className="text-xl md:text-2xl font-semibold">
+                        <h3 className="text-lg md:text-xl font-semibold">
                         {title}
                         </h3>
                         {/*  group-hover:text-gray duration-300*/}
@@ -28,7 +28,7 @@ const ResumeCard = ({item:{title, subTitle, result, desc, hasModal, longDesc, co
                         </div>
                     }
                 </div>
-                <p className="text-md md:text-lg font-normal text-black">
+                <p className="text-sm md:text-md font-normal text-black">
                     {desc}
                 </p>
             </div>
@@ -42,7 +42,7 @@ const ResumeCard = ({item:{title, subTitle, result, desc, hasModal, longDesc, co
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t gap-4">
                   <div className="flex flex-col lgl:flex-row justify-between gap-4 lgl:items-center">
                     <div>
-                        <h3 className="text-xl md:text-2xl font-semibold">
+                        <h3 className="text-lg md:text-xl font-semibold">
                         {title}
                         </h3>
                         <p className="text-md mt-2 text-black">
@@ -67,13 +67,13 @@ const ResumeCard = ({item:{title, subTitle, result, desc, hasModal, longDesc, co
                   </button>
                 </div>
                 <div className="relative px-8 py-4 ml-1 flex-auto">
-                  <ul className="list-none mb-4 text-md md:text-lg font-normal text-black">
+                  <ul className="list-none mb-4 text-sm md:text-md font-normal text-black">
                     {longDesc.map(item => (
                             <li className="mb-3">{item}</li>
                         ))}
                   </ul>
                   {coursesTaken &&
-                  <ul className="text-md md:text-lg list-disc"> <p className="underline">Courses taken:</p>
+                  <ul className="text-sm md:text-md list-disc"> <p className="underline">Courses taken:</p>
                     {coursesTaken.map(item => (
                         <li>{item}</li>
                     ))}

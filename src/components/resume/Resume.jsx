@@ -58,7 +58,7 @@ const Resume = () => {
                 {skillData && <Skills />}
                 {experienceData && <Experience />}
             </div> */}
-            <div className="">
+            <div className="space-y-8">
                 <Education />
                 <Experience />
                 <Skills />

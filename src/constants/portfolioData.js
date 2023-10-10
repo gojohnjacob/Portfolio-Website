@@ -9,14 +9,14 @@ export const portfolioData = [
         title: "Personal Website",
         desc: "Tech Stack: React, TailwindCSS",
     },
-    {
-        id: 2,
-        webLink: "",
-        githubLink: "https://github.com/gojohnjacob/Ripple-SocialMedia",
-        img: "",
-        title: "Ripple: Social Media Website",
-        desc: "Tech Stack: React, Next.JS, Tailwind CSS, Supabase, SQL",
-    },
+    // {
+    //     id: 2,
+    //     webLink: "",
+    //     githubLink: "https://github.com/gojohnjacob/Ripple-SocialMedia",
+    //     img: "",
+    //     title: "Ripple: Social Media Website",
+    //     desc: "Tech Stack: React, Next.JS, Tailwind CSS, Supabase, SQL",
+    // },
     {
         id: 3,
         webLink: "",
