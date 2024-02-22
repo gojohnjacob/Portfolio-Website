@@ -58,7 +58,7 @@ const Contact = () => {
                     <p className="text-sm md:text-base">https://github.com/gojohnjacob</p>
                 </div>
         </a>
-        <a href="resume.pdf" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
+        <a href="GoJohnJacob_Resume.pdf" className="h-16 w-auto outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                 <div className="flex flex-row gap-1.5 items-center justify-center font-bodyFont mx-4">
                     <GrDocumentDownload />
                     <p className="text-sm md:text-base">Resume</p>

@@ -47,7 +47,7 @@ const Banner = () => {
                     I am an aspiring software engineer with experience in Python programming, full-stack web development,
                     and data analysis and visualization. I'm currently looking for Software Engineering and Data Science internships!
                     </p>
-                <a href="resume.pdf" download className="h-16 items-stretch w-auto outline outline-1 bg-transparent bg-opacity-25 text-gray-900 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
+                <a href="GoJohnJacob_Resume.pdf" download className="h-16 items-stretch w-auto outline outline-1 bg-transparent bg-opacity-25 text-gray-900 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;">
                         <div className="flex flex-row gap-1.5 items-center justify-center text-md font-bodyFont">
                             <GrDocumentDownload />
                             <p>Download CV</p>
