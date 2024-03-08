@@ -3,7 +3,7 @@ export const schoolData = [
         id: 1,
         title: "BSc (Hons) in Computer Science",
         subTitle: "Yale-NUS College (2020-2024)",
-        result: "4.75/5.0",
+        result: "4.79/5.0",
         desc: "First Class Honors",
         hasModal: true,
         longDesc: [
