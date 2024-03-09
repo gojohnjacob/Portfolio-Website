@@ -52,7 +52,7 @@ export const skillsLeftData = [
     {
         id: 11,
         name: "TypeScript",
-        rating: 3,
+        rating: 4,
     },
     {
         id: 12,
@@ -141,7 +141,7 @@ export const skillsRightData = [
     {
         id: 13,
         name: "Firebase",
-        rating: 2,
+        rating: 4,
     },
     {
         id: 14,

@@ -15,9 +15,9 @@ const Skills = () => (
                 </p>
                 <h2 className="text-3xl md:text-4xl font-bold">Languages and Frameworks</h2>
             </div>
-            <div className="w-full h-auto py-5 flex flex-col gap-6 outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex justify-center rounded-md ">
+            <div className="w-full h-auto py-5 flex flex-col gap-6 outline outline-1 bg-transparent bg-opacity-25 text-black text-xl justify-center rounded-md ">
                 {skillsLeftData.map((item) => (
-                    <SkillCard skillName={item.name} rating={item.rating} />
+                    <SkillCard key={item.name} skillName={item.name} rating={item.rating} />
                 ))}
             </div>
         </div>
@@ -29,9 +29,9 @@ const Skills = () => (
                 </p>
                 <h2 className="text-3xl md:text-4xl font-bold">Tools and Utilities</h2>
             </div>
-            <div className="w-full h-auto py-5 flex flex-col gap-6 outline outline-1 bg-transparent bg-opacity-25 text-black text-xl inline-flex justify-center rounded-md ">
+            <div className="w-full h-auto py-5 flex flex-col gap-6 outline outline-1 bg-transparent bg-opacity-25 text-black text-xl justify-center rounded-md ">
                 {skillsRightData.map((item) => (
-                    <SkillCard skillName={item.name} rating={item.rating} />
+                    <SkillCard key={item.name} skillName={item.name} rating={item.rating} />
                 ))}
             </div>
         </div>
