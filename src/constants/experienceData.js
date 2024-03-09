@@ -27,19 +27,6 @@ export const experienceData = [
         ],
     },
     {
-        id: 5,
-        title: "Full-Stack Developer Intern (Jul 2023 - Jan 2024)",
-        subTitle: "Vibefam",
-        result: "",
-        desc: "Developed new backend functionality involving user management using TypeScript, Firebase",
-        hasModal: true,
-        longDesc: [
-            "Developed new backend functionality and microservices involving user management using TypeScript, Firebase",
-            "Expanded test coverage by 30% by adding unit tests for TypeScript codebase using Jest",
-            "Built user interfaces, implemented design mockups, and quickly resolved frontend bugs in production using Vue.JS"
-        ],
-    },
-    {
         id: 1,
         title: "Software Development Intern (May 2023 - Aug 2023)",
         subTitle: "VFlowTech Inc.",
@@ -50,18 +37,6 @@ export const experienceData = [
             "Led end-to-end development of internal admin dashboard using Vue.JS, D3.js, Bootstrap, and Sentry to allow fast monitoring of IOT devices, reducing latency from previous solutions by 70%",
             "Developed and optimized REST API endpoints using caching and pagination to retrieve IOT sensor data, using Flask, FastAPI, and PostgreSQL",
             "Developed DevOps pipeline for Vue.JS and Python projects using Docker, Jenkins",
-        ],
-    },
-    {
-        id: 2,
-        title: "Backend Development Student Associate (Apr 2023 - Aug 2023)",
-        subTitle: "Yale-NUS College",
-        result: "",
-        desc: "Implemented backend features for astronomy research dashboard using Flask such as data processing and validation, advanced search, and administrator database management functionality",
-        hasModal: true,
-        longDesc: [
-            "Implemented backend features for astronomy research dashboard using Flask such as data processing and validation, advanced search, and administrator database management functionality",
-            "Optimized database queries using caching, leading to a 40% improvement in page load time"
         ],
     },
     {
@@ -79,6 +54,31 @@ export const experienceData = [
 ];
 
 export const researchData = [
+    {
+        id: 5,
+        title: "Full-Stack Developer Intern (Jul 2023 - Jan 2024)",
+        subTitle: "Vibefam",
+        result: "",
+        desc: "Developed new backend functionality involving user management using TypeScript, Firebase",
+        hasModal: true,
+        longDesc: [
+            "Developed new backend functionality and microservices involving user management using TypeScript, Firebase",
+            "Expanded test coverage by 30% by adding unit tests for TypeScript codebase using Jest",
+            "Built user interfaces, implemented design mockups, and quickly resolved frontend bugs in production using Vue.JS"
+        ],
+    },
+    {
+        id: 3,
+        title: "Backend Development Student Associate (Apr 2023 - Aug 2023)",
+        subTitle: "Yale-NUS College",
+        result: "",
+        desc: "Implemented backend features for astronomy research dashboard using Flask such as data processing and validation, advanced search, and administrator database management functionality",
+        hasModal: true,
+        longDesc: [
+            "Implemented backend features for astronomy research dashboard using Flask such as data processing and validation, advanced search, and administrator database management functionality",
+            "Optimized database queries using caching, leading to a 40% improvement in page load time"
+        ],
+    },
     {
         id: 2,
         title: "Data Science Research Associate (May 2021 - Aug 2022)",
